@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Solution for Module 2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    section {
+      border: 1px solid black;
+      background: #e0e0e0;
+      margin: 10px;
+      padding: 40px 15px 15px 15px; /* leave space for the box */
+      position: relative;
+    }
+
+    .title-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid black;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+
+    .chicken {
+      background: #f4a7a3; /* light pink */
+    }
+
+    .beef {
+      background: #d9534f; /* red */
+      color: white;
+    }
+
+    .sushi {
+      background: #f0e68c; /* yellow */
+    }
+
+    /* Desktop: 3 columns */
+    @media (min-width: 992px) {
+      section {
+        float: left;
+        width: 31.3%;
+      }
+    }
+
+    /* Tablet: 2 on top, 1 below */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col1, .col2 {
+        float: left;
+        width: 48%;
+      }
+      .col3 {
+        clear: both;
+        width: 98%;
+      }
+    }
+
+    /* Mobile: stacked */
+    @media (max-width: 767px) {
+      section {
+        width: 98%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Menu</h1>
+
+  <div class="row">
+    <section class="col1">
+      <div class="title-box chicken">Chicken</div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+
+    <section class="col2">
+      <div class="title-box beef">Beef</div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+
+    <section class="col3">
+      <div class="title-box sushi">Sushi</div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
